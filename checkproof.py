@@ -27,9 +27,18 @@ class proofcheck:
             ctokens=self.readfile()
             for linetoken in ctokens:
                 existflag=0
+                matchflag=-1
                 for unittoken in unitresult:
-                    if unittoken not in linetoken:
+                    if unittoken  in linetoken:
+                        tmpposition=linetoken.find(unittoken)
+                        if tmpposition>matchflag:
+                            matchflag=tmpposition
+                        else:
+                            existflag=1
+                            break;
+                    else:
                         existflag=1
+                        break;
                 if existflag==0:
                     print linetoken
         else:
