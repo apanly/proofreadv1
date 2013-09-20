@@ -1,5 +1,5 @@
 #中文文本自动纠错
-###原因：在做智能家居的声控启动的时候发现，声音命令转化为文字的时候有时候会有问题，例如天气预报 翻译成天汽预报，就想到了搜索引擎中的纠错功能
+####原因：在做智能家居的声控启动的时候发现，声音命令转化为文字的时候有时候会有问题，例如天气预报 翻译成天汽预报，就想到了搜索引擎中的纠错功能
 但是由于个人水平有限制，所以第一版本还不是很详细
 
 #开发语言
@@ -9,7 +9,7 @@
 * python main.py
 
 #系统原理：
-## 围绕着如何找出这段文字中是否有错误的字？
+#### 围绕着如何找出这段文字中是否有错误的字？
 * 找到了很多语料集，进行分词统计词频
 * 将待分析的文字的每一个字拆开放到一个数组中
   * 计算每一个字是否在词频字典中有，如果有说明这个字是对的
@@ -26,8 +26,8 @@
     └── README.MD
 
 #How to Contact
-##QQ:36405410
-##Email:apanly@163.com
+####QQ:36405410
+####Email:apanly@163.com
 
 #Copying
-###Free use of this software is granted under the terms of the GNU Lesser General Public License (LGPL)
+####Free use of this software is granted under the terms of the GNU Lesser General Public License (LGPL)
