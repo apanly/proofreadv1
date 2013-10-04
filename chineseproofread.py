@@ -13,8 +13,10 @@ class proofread:
             self.dicmap=json.loads(encodedjson)
         else:
             self.dicmap=self.initdicmap()
-        #for item in self.dicmap:
-        #    print "%s:%d"%(item,self.dicmap[item])
+        for item in self.dicmap:
+            #print "%s:%d"%(item,self.dicmap[item])
+            print item
+        exit
 
     def proofreadAndSuggest(self,txt):
         ctarget=proofcheck(self.dicmap)
